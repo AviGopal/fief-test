@@ -18,6 +18,7 @@ def validate_openid_provider(cls, values: dict[str, Any]):
     return values
 
 
+
 class OAuthProviderCreate(BaseModel):
     provider: AvailableOAuthProvider
     client_id: str

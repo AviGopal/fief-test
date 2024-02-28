@@ -23,7 +23,6 @@ LOCALHOST_HOST_PATTERN = re.compile(
     r"([^\.]+\.)?localhost(\d+)?|127\.0\.0\.1", flags=re.IGNORECASE
 )
 
-
 class WorkspaceCreation:
     def __init__(
         self,

@@ -18,6 +18,7 @@ from fief.settings import settings
 ResponseType = TypeVar("ResponseType", bound=Response)
 
 
+
 class RegistrationFlow:
     def __init__(
         self,

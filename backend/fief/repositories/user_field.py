@@ -28,3 +28,4 @@ class UserFieldRepository(BaseRepository[UserField], UUIDRepositoryMixin[UserFie
             for user_field in user_fields
             if user_field.configuration["at_update"]
         ]
+
