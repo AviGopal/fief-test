@@ -1,5 +1,6 @@
 from typing import Any, cast
 
+
 from fastapi import Depends, HTTPException, Request, status
 from fastapi.exceptions import RequestValidationError
 from fastapi.security import OAuth2AuthorizationCodeBearer

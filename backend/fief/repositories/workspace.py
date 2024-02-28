@@ -12,6 +12,7 @@ from fief.settings import settings
 class WorkspaceRepository(BaseRepository[Workspace], UUIDRepositoryMixin[Workspace]):
     model = Workspace
 
+
     async def get_by_domain(self, domain: str) -> Workspace | None:
         statement = select(Workspace).where(Workspace.domain == domain)
         return await self.get_one_or_none(statement)
